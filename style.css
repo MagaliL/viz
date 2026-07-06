@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Ajustes para que la visualización de Tableau se renderice correctamente */
+.viz-container {
+    width: 100%;
+    min-height: 500px;
+    display: block;
+}
+
+.tableauViz {
+    display: block !important;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Esto elimina el margen del contenedor que encierra al embed */
+.viz-container {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden; /* Evita barras de desplazamiento innecesarias */
+}
+
+/* Esto obliga al objeto de Tableau a respetar el ancho de la tarjeta */
+.tableauViz {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
